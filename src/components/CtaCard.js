@@ -40,7 +40,7 @@ const Container = styled.div`
 
 const CtaCard = () => {
   return (
-    <Card style={{ transform: "translateY(-40%)" }}>
+    <Card>
       <Container>
         <img src={logo} alt="mastercraft logo" className="cta-logo" />
         <h1 className="cta-heading">Mastercraft Bamboo Monitor Riser</h1>
@@ -50,7 +50,7 @@ const CtaCard = () => {
         <div className="cta-btns">
           <Button primary>Back this project</Button>
           <Button bookmark>
-            <img src={bookmarkIcon} alt="" className="btn-icon" />
+            <img src={bookmarkIcon} alt="bookmark icon" className="btn-icon" />
             <span className="bookmark-text">Bookmark</span>
           </Button>
         </div>
