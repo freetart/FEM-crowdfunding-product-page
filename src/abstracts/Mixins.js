@@ -7,13 +7,13 @@ const flexCenter = css`
 `;
 
 const headingStyles = css`
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.1rem;
   line-height: 1.3;
 `;
 
 const textStyles = css`
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 1.6;
 `;
