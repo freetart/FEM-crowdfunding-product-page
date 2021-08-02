@@ -10,8 +10,10 @@ const Globals = createGlobalStyle`
     --darkCyan: hsl(176, 72%, 28%);
     /* neutral */
     --darkGray: hsl(0, 0%, 48%);
+    --lightGray: #f2f2f2;
     /* radius */
     --mainRadius: 1rem;
+    --secondaryRadius: 5rem;
     /* shadows */
     --mainShadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, .1);
     /* transitions */
@@ -41,6 +43,7 @@ const Globals = createGlobalStyle`
   body {
     font-family: "Commissioner", sans-serif;
     overflow-x: hidden;
+    background-color: var(--lightGray);
   }
 
   img {
