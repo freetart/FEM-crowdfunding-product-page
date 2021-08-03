@@ -18,11 +18,7 @@ const Container = styled.div`
     transform: translate(50%, 50%);
 
     ${Responsive.md`
-    top: -45%; 
-    `}
-
-    ${Responsive.sm`
-    top: -35%; 
+    top: -42%; 
     `}
   }
 

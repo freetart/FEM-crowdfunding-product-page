@@ -1,8 +1,10 @@
+import { useState } from "react";
 import styled from "styled-components";
 import NavLink from "./NavLink";
 import { maxWidthLg } from "../abstracts/Mixins";
 import logo from "../images/logo.svg";
 import Responsive from "../abstracts/Responsive";
+import MobileMenuToggle from "./MobileMenuToggle";
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -26,6 +28,8 @@ const Container = styled.div`
 `;
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <nav>
       <Container>
@@ -35,6 +39,7 @@ const Navbar = () => {
           <NavLink text="Discover" />
           <NavLink text="Get Started" />
         </ul>
+        <MobileMenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
     </nav>
   );
