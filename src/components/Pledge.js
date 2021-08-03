@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Button from "../components/styledElements/Button";
 import { headingStyles, textStyles } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   border: 0.2rem solid var(--lightGray);
@@ -15,6 +16,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .pledge-title {
@@ -39,6 +42,8 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .pledge-left {

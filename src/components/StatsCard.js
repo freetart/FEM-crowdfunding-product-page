@@ -1,13 +1,19 @@
 import styled from "styled-components";
 import Card from "./styledElements/Card";
 import { headingStyles, textStyles } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   .stats {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
     margin-bottom: 3rem;
+
+    ${Responsive.md`
+    grid-template-columns: 1fr; 
+    text-align: center;
+    `}
   }
 
   .stat-number {

@@ -4,6 +4,7 @@ import logo from "../images/logo-mastercraft.svg";
 import bookmarkIcon from "../images/icon-bookmark.svg";
 import { headingStyles, textStyles } from "../abstracts/Mixins";
 import Button from "./styledElements/Button";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   position: relative;
@@ -12,9 +13,17 @@ const Container = styled.div`
   .cta-logo {
     width: 8rem;
     position: absolute;
-    top: -30%;
-    right: 40%;
-    transform: translate(-50%, -50%);
+    top: -60%;
+    right: 50%;
+    transform: translate(50%, 50%);
+
+    ${Responsive.md`
+    top: -45%; 
+    `}
+
+    ${Responsive.sm`
+    top: -35%; 
+    `}
   }
 
   .cta-heading {
@@ -36,6 +45,23 @@ const Container = styled.div`
     justify-content: space-evenly;
     padding: 2rem 0;
   }
+
+  .desktop-bookmark {
+    padding-right: 2rem;
+
+    ${Responsive.md`
+    display: none; 
+    `}
+  }
+
+  .mobile-bookmark {
+    display: none;
+    padding: 0;
+
+    ${Responsive.md`
+    display: block; 
+    `}
+  }
 `;
 
 const CtaCard = () => {
@@ -49,9 +75,12 @@ const CtaCard = () => {
         </p>
         <div className="cta-btns">
           <Button primary>Back this project</Button>
-          <Button bookmark>
+          <Button bookmark className="desktop-bookmark">
             <img src={bookmarkIcon} alt="bookmark icon" className="btn-icon" />
             <span className="bookmark-text">Bookmark</span>
+          </Button>
+          <Button bookmark className="mobile-bookmark">
+            <img src={bookmarkIcon} alt="bookmark icon" className="btn-icon" />
           </Button>
         </div>
       </Container>

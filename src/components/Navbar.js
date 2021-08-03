@@ -2,6 +2,7 @@ import styled from "styled-components";
 import NavLink from "./NavLink";
 import { maxWidthLg } from "../abstracts/Mixins";
 import logo from "../images/logo.svg";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -17,6 +18,10 @@ const Container = styled.div`
   .nav-list {
     display: flex;
     gap: 3rem;
+
+    ${Responsive.md`
+    display: none;
+    `}
   }
 `;
 

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { headingStyles } from "../../abstracts/Mixins";
+import Responsive from "../../abstracts/Responsive";
 
 const Button = styled.button`
   ${headingStyles}
@@ -28,15 +29,20 @@ const Button = styled.button`
       color: var(--darkGray);
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 2rem;
       padding: 0;
-      padding-right: 2rem;
       background-color: var(--lightGray);
 
       &:hover,
       &:focus {
         background-color: var(--darkCyan);
         color: var(--white);
+
+        ${Responsive.md`
+        background-color: transparent;
+        box-shadow: none; 
+        `}
       }
     `}
 
