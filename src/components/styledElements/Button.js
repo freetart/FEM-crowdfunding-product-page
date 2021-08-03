@@ -39,6 +39,14 @@ const Button = styled.button`
         color: var(--white);
       }
     `}
+
+  ${({ outOfStock }) =>
+    outOfStock &&
+    css`
+      background-color: var(--darkGray);
+      color: var(--white);
+      cursor: not-allowed;
+    `}
 `;
 
 export default Button;

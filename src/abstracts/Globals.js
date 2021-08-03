@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const Globals = createGlobalStyle`
   :root {
     /* colors */
-    --black: #222;
+    --black: #000;
     --white: #fff;
     /* primary */
     --moderateCyan: hsl(176, 50%, 47%);
