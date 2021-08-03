@@ -5,6 +5,7 @@ import { maxWidthLg } from "../abstracts/Mixins";
 import logo from "../images/logo.svg";
 import Responsive from "../abstracts/Responsive";
 import MobileMenuToggle from "./MobileMenuToggle";
+import MobileMenu from "./MobileMenu";
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -41,6 +42,7 @@ const Navbar = () => {
         </ul>
         <MobileMenuToggle isActive={isActive} setIsActive={setIsActive} />
       </Container>
+      <MobileMenu isActive={isActive} />
     </nav>
   );
 };

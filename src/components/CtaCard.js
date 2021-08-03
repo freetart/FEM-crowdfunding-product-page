@@ -18,7 +18,7 @@ const Container = styled.div`
     transform: translate(50%, 50%);
 
     ${Responsive.md`
-    top: -42%; 
+    top: -40%; 
     `}
   }
 
@@ -26,6 +26,7 @@ const Container = styled.div`
     ${headingStyles}
     font-size: var(--md);
     color: var(--black);
+    padding-top: 0.5rem;
   }
 
   .cta-desc {
@@ -40,6 +41,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 0;
+    gap: 2rem;
   }
 
   .desktop-bookmark {
