@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav>
       <Container>
-        <img src={logo} alt="crowdfund logo" class="nav-logo" />
+        <img src={logo} alt="crowdfund logo" className="nav-logo" />
         <ul className="nav-list">
           <NavLink text="About" />
           <NavLink text="Discover" />

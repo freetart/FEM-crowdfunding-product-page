@@ -72,7 +72,7 @@ const Pledge = ({
         </header>
         <p className="pledge-desc">{description}</p>
         <footer className="pledge-footer">
-          <h3 class="pledge-left">
+          <h3 className="pledge-left">
             <span className="pledge-number">{productAmount}</span>
             left
           </h3>
