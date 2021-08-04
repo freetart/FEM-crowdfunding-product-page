@@ -1,4 +1,6 @@
 import { useState } from "react";
+import AOS from "aos";
+import "../node_modules/aos/dist/aos.css";
 import styled from "styled-components";
 import Globals from "./abstracts/Globals";
 import Header from "./components/Header";
@@ -22,6 +24,7 @@ const Main = styled.main`
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
+  AOS.init({ offset: 1, duration: 1000, once: true });
 
   return (
     <>

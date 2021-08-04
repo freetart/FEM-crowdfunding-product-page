@@ -44,7 +44,7 @@ const Container = styled.div`
 
 const StatsCard = () => {
   return (
-    <Card>
+    <Card data-aos="fade-up" data-aos-delay="100">
       <Container>
         <div className="stats">
           <div className="stat">

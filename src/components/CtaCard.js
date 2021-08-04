@@ -64,7 +64,7 @@ const Container = styled.div`
 
 const CtaCard = ({ setOpenModal }) => {
   return (
-    <Card>
+    <Card data-aos="fade-up">
       <Container>
         <img src={logo} alt="mastercraft logo" className="cta-logo" />
         <h1 className="cta-heading">Mastercraft Bamboo Monitor Riser</h1>

@@ -26,7 +26,7 @@ const Container = styled.div`
 
 const ProjectCard = () => {
   return (
-    <Card>
+    <Card data-aos="fade-up" data-aos-delay="200">
       <Container>
         <div className="about">
           <h2 className="about-title">About this project</h2>
