@@ -62,7 +62,7 @@ const Container = styled.div`
   }
 `;
 
-const CtaCard = () => {
+const CtaCard = ({ setOpenModal }) => {
   return (
     <Card>
       <Container>
@@ -72,7 +72,9 @@ const CtaCard = () => {
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div className="cta-btns">
-          <Button primary>Back this project</Button>
+          <Button primary onClick={() => setOpenModal(true)}>
+            Back this project
+          </Button>
           <Button bookmark className="desktop-bookmark">
             <img src={bookmarkIcon} alt="bookmark icon" className="btn-icon" />
             <span className="bookmark-text">Bookmark</span>

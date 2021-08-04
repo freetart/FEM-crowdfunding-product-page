@@ -8,6 +8,7 @@ const Card = styled.article`
   width: 800px;
   margin: 0 auto;
   padding: 5rem;
+  position: relative;
 
   ${Responsive.lg`
   width: 95%;

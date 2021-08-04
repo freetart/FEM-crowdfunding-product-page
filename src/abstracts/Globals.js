@@ -44,6 +44,7 @@ const Globals = createGlobalStyle`
     font-family: "Commissioner", sans-serif;
     overflow-x: hidden;
     background-color: var(--lightGray);
+    position: relative;
   }
 
   img {

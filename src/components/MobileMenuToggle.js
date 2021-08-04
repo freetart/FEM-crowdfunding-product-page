@@ -22,7 +22,7 @@ const Button = styled.button`
   }
 `;
 
-function MobileMenuToggle({ isActive, setIsActive }) {
+const MobileMenuToggle = ({ isActive, setIsActive }) => {
   return (
     <Button className="toggle" onClick={() => setIsActive(!isActive)}>
       {!isActive ? (
@@ -32,6 +32,6 @@ function MobileMenuToggle({ isActive, setIsActive }) {
       )}
     </Button>
   );
-}
+};
 
 export default MobileMenuToggle;
