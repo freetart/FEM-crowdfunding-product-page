@@ -5,6 +5,7 @@ import { headingStyles, textStyles } from "../abstracts/Mixins";
 import Card from "../components/styledElements/Card";
 import ModalPledge from "../components/ModalPledge";
 import pledgeData from "../data";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   overflow-y: scroll;
@@ -17,11 +18,20 @@ const Container = styled.div`
     right: 2rem;
     border: 0;
     background: transparent;
+
+    ${Responsive.md`
+    top: 0.5rem;
+    right: 1rem;
+    `}
   }
 
   .modal-icon {
     color: var(--darkGray);
     font-size: var(--md);
+
+    ${Responsive.md`
+    font-size: var(--sm);
+    `}
   }
 
   .modal-title {

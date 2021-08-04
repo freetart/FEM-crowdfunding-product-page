@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Button from "../components/styledElements/Button";
 import { headingStyles, textStyles, flexCenter } from "../abstracts/Mixins";
+import Responsive from "../abstracts/Responsive";
 
 const Container = styled.div`
   border: 0.2rem solid var(--lightGray);
@@ -49,6 +50,7 @@ const Container = styled.div`
   .modal-pledge-header-left {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 3rem;
   }
 
@@ -92,6 +94,11 @@ const Container = styled.div`
     color: var(--black);
   }
 
+  .modal-pledge-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .modal-pledge-footer-desc {
     ${textStyles}
     font-size: var(--xxs);
@@ -100,6 +107,7 @@ const Container = styled.div`
 
   .modal-pledge-footer-btns {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
   }
 
@@ -110,6 +118,11 @@ const Container = styled.div`
     font-size: var(--xxs);
     outline: 0;
     transition: var(--mainTransition);
+    padding: 2rem;
+
+    ${Responsive.md`
+    width: 100%;
+    `}
 
     &:hover,
     &:focus {

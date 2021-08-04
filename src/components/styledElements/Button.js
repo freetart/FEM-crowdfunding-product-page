@@ -17,6 +17,10 @@ const Button = styled.button`
       background-color: var(--moderateCyan);
       color: var(--white);
 
+      ${Responsive.md`
+      width: 100%;
+      `}
+
       &:hover,
       &:focus {
         background-color: var(--darkCyan);
@@ -52,6 +56,10 @@ const Button = styled.button`
       background-color: var(--darkGray);
       color: var(--white);
       cursor: not-allowed;
+
+      ${Responsive.md`
+      width: 100%;
+      `}
     `}
 `;
 
